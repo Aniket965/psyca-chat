@@ -1,0 +1,23 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    
+}
+.centered_div {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+ .header {
+     text-align: center;
+     margin-top:6%;
+     font-size: 4rem;
+     font-family: 'Varela Round', sans-serif;
+ }
+ .what-is {
+    text-align: center;
+    margin-top:16%;
+    font-size: 1.5rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #999!important
+ }
