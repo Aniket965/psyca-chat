@@ -1,0 +1,23 @@
+{
+  "name": "chartz",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "d3-scale": "^1.0.6",
+    "eslint-config-react-app": "^2.0.1",
+    "firebase": "^4.6.0",
+    "react": "^16.0.0",
+    "react-d3": "^0.4.0",
+    "react-dom": "^16.0.0",
+    "react-easy-chart": "^0.3.0",
+    "react-faux-dom": "^4.0.5",
+    "react-scripts": "1.0.14",
+    "react-sparklines": "^1.7.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
