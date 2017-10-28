@@ -13,10 +13,13 @@ detector.addEventListener("onImageResultsSuccess", function (faces, image, times
     faces.forEach((face) => {
         if (!running) {
             running = true
-            firebase.database().ref('/codeoff').push(face.emotions);
+            var date = new Date();
+            firebase.database().ref('/codeoff').push({
+                emo:face.emotions,
+                time:date.toString()
+            });
             console.log(face.emotions)
-            setTimeout(_ => {
-
+            setTimeout(_ => { 
                 running = false
             }, 1000)
         } else {
@@ -53,6 +56,5 @@ $(document).ready(() => {
         messagingSenderId: "481329884022"
     };
     firebase.initializeApp(config);
-
 
 })
